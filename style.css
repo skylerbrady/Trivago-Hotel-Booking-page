@@ -1,0 +1,446 @@
+    body {
+        background-color: #EBECED;
+    }
+    
+    .main-container {
+        margin: 150px 200px 200px;
+    }
+    
+    .main-heading {
+        font-size: 63px;
+        text-align: center;
+    }
+    
+    .initial {
+        color: #007FAF;
+    }
+    
+    .middle {
+        color: #F49138;
+    }
+    
+    .final {
+        color: #C94A38;
+    }
+    
+    .sub-heading {
+        text-align: center;
+    }
+    
+    .input-city {
+        height: 37px;
+        width: 278px;
+        position: relative;
+        top: 41px;
+        border: 1px solid;
+        padding-left: 19px;
+    }
+    
+    .input-check-in {
+        height: 32px;
+        width: 177px;
+    }
+    
+    .input-check-in:focus {
+        height: 35px;
+        width: 177px;
+    }
+    
+    .input-check-out {
+        height: 32px;
+        margin: -6px;
+        width: 177px;
+    }
+    
+    .input-check-out:focus {
+        height: 35px;
+        margin: -6px;
+        width: 175px;
+    }
+    
+    .input-room {
+        height: 37px;
+        width: 149px;
+        text-align: center;
+        position: relative;
+        left: 695px;
+        top: -41px;
+        border: 1px solid;
+    }
+    
+    .search {
+        height: 40px;
+        width: 140px;
+        border: none;
+        background-color: #005F81;
+        color: white;
+        position: relative;
+        left: 710px;
+        top: -41px;
+    }
+    
+    #main-container-second {
+        width: 85%;
+        display: none;
+    }
+    
+    .header-bar {
+        height: 55px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        margin: 0px;
+        text-align: center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    
+    .logo-wraper {
+        position: absolute;
+        top: 10px;
+        left: 46%;
+    }
+    
+    .logo {
+        width: 40px;
+        border-left: 1px solid #cdd0d2;
+        border-right: 1px solid #cdd0d2;
+        position: absolute;
+        top: 0px;
+        left: 85%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .menu {
+        width: 40px;
+        position: absolute;
+        top: 10px;
+        left: 90%;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgba(218, 218, 218, 0.952);
+        width: 200px;
+        left: 80%;
+        top: 50%;
+        z-index: 1;
+        text-align: center;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown-content>p:hover {
+        color: rgba(38, 24, 233, 0.637);
+        cursor: pointer;
+    }
+    
+    .dropdown>span:hover {
+        color: rgba(38, 24, 233, 0.637);
+    }
+    
+    .inr {
+        width: 40px;
+        border-left: 1px solid #cdd0d2;
+        position: absolute;
+        top: 0px;
+        left: 95%;
+        padding-left: 10px;
+    }
+    
+    .input-wrap {
+        position: relative;
+        ;
+        top: 70px;
+        left: 15%;
+    }
+    
+    .contents {
+        position: absolute;
+        top: 30%;
+        left: 144px;
+        width: 938px;
+        height: 60px;
+        background-color: white;
+    }
+    
+    .Accomodation {
+        position: absolute;
+        top: 0px;
+        left: 25%;
+        border-right: 1px solid #cdd0d2;
+        padding-right: 40px;
+    }
+    
+    .Guest {
+        position: absolute;
+        top: 0px;
+        left: 42%;
+        border-right: 1px solid #cdd0d2;
+        padding-right: 40px;
+    }
+    
+    .Hotel-Location {
+        position: absolute;
+        top: 0px;
+        left: 60%;
+        border-right: 1px solid #cdd0d2;
+        padding-right: 40px;
+    }
+    
+    .Filters {
+        position: absolute;
+        top: 0px;
+        left: 80%;
+    }
+    
+    .range {
+        border-right: 1px solid #cdd0d2;
+        width: 23%;
+        height: 60px;
+    }
+    
+    .slider {
+        position: relative;
+        top: 25px;
+        -webkit-appearance: none;
+        width: 90%;
+        height: 15px;
+        border-radius: 5px;
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+    }
+    
+    .slider:hover {
+        opacity: 1;
+    }
+    
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #4CAF50;
+        cursor: pointer;
+    }
+    
+    select {
+        float: right;
+        position: absolute;
+        top: 41%;
+        left: 63%;
+        width: 221px;
+        height: 39px;
+        background-color: white;
+        display: none;
+    }
+    
+    .card {
+        width: 931px;
+        height: 196px;
+        background-color: #ffffff;
+        position: relative;
+        left: 138px;
+        top: -128px;
+        padding: 5px;
+        margin-bottom: 10px;
+        box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+    }
+    
+    .hotel-information {
+        padding-left: 32px;
+    }
+    
+    .hotel-information,
+    p {
+        line-height: 13px;
+    }
+    
+    .card-left-side {
+        float: left;
+    }
+    
+    .card-right-side {
+        float: left;
+    }
+    
+    .hotel-price {
+        float: left;
+        padding-left: 15px;
+    }
+    
+    .price-list {
+        list-style-type: none;
+        border-left: 1px solid #cdd0d2;
+        border-right: 1px solid #cdd0d2;
+        padding-right: 43px;
+    }
+    
+    .price-list,
+    span {
+        line-height: 23px;
+    }
+    
+    .view-right {
+        float: left;
+        padding-left: 80px;
+    }
+    
+    .submit-style-break {
+        width: 200px;
+        height: 25px;
+        text-align: center;
+        border: 1px solid #4a9702;
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #316301;
+        position: relative;
+        left: -30px;
+    }
+    
+    .submit-style {
+        width: 200px;
+        height: 40px;
+        text-align: center;
+        background-color: #4a9702;
+        border: none;
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+        color: white;
+    }
+    
+    .submit-style:hover {
+        background-color: #316301;
+    }
+    
+    .submit-style-div {
+        width: 200px;
+        height: 40px;
+        position: relative;
+        left: -31px;
+    }
+    
+    .second-page-input {
+        position: relative;
+        left: 136px;
+        top: -114px;
+    }
+    
+    #card-container {
+        padding-top: 130px;
+    }
+    
+    .errors span {
+        color: red;
+    }
+    
+    #first-page-input {
+        height: 79px;
+        width: 1098px;
+        position: relative;
+        left: -77px;
+    }
+    
+    .date-collaps {
+        width: 360px;
+        border: 1px solid;
+        position: relative;
+        left: 318px;
+        height: 38px;
+    }
+    
+    .input-city-1 {
+        height: 37px;
+        width: 278px;
+        text-align: center;
+        position: relative;
+        top: 41px;
+        border: 1px solid;
+        padding-left: 29px;
+    }
+    
+    .input-check-in-1 {
+        height: 35px;
+    }
+    
+    .input-check-out-1 {
+        height: 35px;
+        margin: -6px;
+    }
+    
+    .input-room-1 {
+        height: 37px;
+        width: 149px;
+        text-align: center;
+        position: relative;
+        left: 695px;
+        top: -41px;
+        border: 1px solid;
+    }
+    
+    .search-1 {
+        height: 40px;
+        width: 140px;
+        border: none;
+        background-color: #005F81;
+        color: white;
+        position: relative;
+        left: 710px;
+        top: -41px;
+    }
+    
+    .reset {
+        height: 30px;
+        width: 100px;
+        border: none;
+        background-color: #005F81;
+        color: white;
+    }
+    
+    #error1 {
+        position: relative;
+        top: -64px;
+    }
+    
+    #error2 {
+        position: relative;
+        top: -90px;
+        left: 315px;
+    }
+    
+    #error3 {
+        position: relative;
+        left: 512px;
+        top: -111px;
+    }
+    
+    #error4 {
+        position: relative;
+        left: 700px;
+        top: -135px;
+    }
+    
+    #error5 {
+        position: relative;
+        left: 315px;
+        top: -128px;
+    }
+    
+    #error6 {
+        position: relative;
+        left: 317px;
+        top: -115px;
+    }

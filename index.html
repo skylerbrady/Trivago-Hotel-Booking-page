@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivago</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div id="hiding">
+            <h1 class="main-heading">
+                <span class="initial">tri</span><span class="middle">va</span><span class="final">go</span>
+            </h1>
+            <h3 class="sub-heading"> Find your ideal hotel and compare prices <br> from different websites</h3>
+        </div>
+        <div id=first-page-input>
+            <input type="text" placeholder="Select city" class="input-city" id="select_city" onChange="check(this.name)" name="typeselect">
+            <div class="date-collaps">
+                <input type="text" placeholder="Check In Date" class="input-check-in" id="check_in" onfocus="(this.type='date')" min="1997-01-01" onChange="check(this.name)" name="typeselect">
+                <input type="text" placeholder="Check Out Date" class="input-check-out" id="check_out" onfocus="(this.type='date')" onChange="check(this.name)" name="typeselect">
+            </div>
+            <input type="text" placeholder="Room" class="input-room" id="room" onChange="check(this.name)" name="typeselect">
+
+            <input type="submit" value="Search" class="search" id="submit"><br>
+            <input type="button" value="Reset" onclick="clearFields()" class="reset">
+            <div class="errors">
+                <span id="error1"></span><br>
+                <span id="error2"></span><br>
+                <span id="error3"></span><br>
+                <span id="error4"></span><br>
+                <span id="error5"></span><br>
+                <span id="error6"></span>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!--Second Page Starts-->
+    <div id="main-container-second">
+        <!--Second Page Header Bar Starts-->
+        <header class="header-bar">
+            <h1>
+                <div class="logo-wraper"> <span class="initial">tri</span><span class="middle">va</span><span class="final">go</span> </div>
+            </h1>
+            <div class="logo">
+                <p>Logo</p>
+            </div>
+            <div class="dropdown">
+                <span class="menu">Menu</span>
+                <div class="dropdown-content">
+                    <p>Recently Veiwed</p>
+                </div>
+            </div>
+            <div class="inr">
+                <p>INR</p>
+            </div>
+        </header>
+        <!--Second Page Header Bar Ends-->
+
+        <div class="second-page-input">
+            <input type="text" placeholder="Select city" class="input-city-1" id="select_city_display">
+            <div class="date-collaps">
+                <input type="text" placeholder="Check In Date" class="input-check-in-1" id="check_in_display" onfocus="(this.type='date')">
+                <input type="text" placeholder="Check Out Date" class="input-check-out-1" id="check_out_display" onfocus="(this.type='date')">
+            </div>
+            <input type="text" placeholder="Room" class="input-room-1" id="room_display">
+            <input type="submit" value="Search" class="search-1" id="submit">
+
+
+
+        </div>
+        <!--Second Page Selection Bar Starts-->
+        <div class="contents">
+            <div class="range">
+                <input type="range" min="1" max="100" value="50" class="slider">
+            </div>
+            <div class="Accomodation ">
+                <h4>Accomodation</h4>
+            </div>
+            <div class="Guest ">
+                <h4>Guest Rating</h4>
+            </div>
+            <div class="Hotel-Location ">
+                <h4>Hotel Location</h4>
+            </div>
+            <div class="Filters ">
+                <h4>More Filters</h4>
+            </div>
+        </div>
+        <!--Second Page Selection Bar Ends-->
+    </div>
+    <!--Second Page Ends-->
+
+
+    <select id="sort_by" class="sort-visiblity">
+            <option value="default">Our recommendation </option>
+            <option value="price">Sort By Price </option>
+            <option value="name">Sort By Hotel Name</option>
+    </select>
+
+
+    <div id="card-container">
+    </div>
+
+</body>
+
+</html>
